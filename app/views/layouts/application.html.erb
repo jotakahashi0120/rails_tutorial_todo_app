@@ -10,6 +10,9 @@
 
   <body>
     <div class="container">
+      <header>
+        <%= link_to "Home", root_path, class: 'btn btn-info' %>
+      </header>
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
