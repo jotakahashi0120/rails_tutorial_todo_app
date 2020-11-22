@@ -2,7 +2,8 @@
 <p>Find me in app/views/tasks/new.html.erb</p>
 
 <%= form_for(@task) do |f| %>
+  <%= render 'shared/error_messages' %>
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, class: 'form-control' %>
   <%= f.submit "Create Task!", class: 'btn btn-primary' %>
 <% end %>
